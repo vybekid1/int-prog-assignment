@@ -246,6 +246,52 @@ a.active{
     justify-content: center;
 
 }
+.loc{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.loc .form{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.loc .form p{
+    width: 350px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.loc .form p input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: #000;
+    padding-left: 10px;
+    margin-left: 5px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 5px;
+}
+
+button{
+    width: 100px;
+    height: 45px;
+    background:rgba(118, 224, 192, 0.881); 
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+
 .call .one{
     display: flex;
     align-items: center;
@@ -486,7 +532,49 @@ a.active{
     .pro-page .name-price a{
         width: 250px;
     }
+    .loc{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .loc .form{
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        margin: auto;
+    }
     
+    .loc .form p{
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        margin-bottom: 8px;
+    }
+    
+    .loc .form p input{
+        width: 100%;
+        height: 100%;
+        background: none;
+        outline: none;
+        border: none;
+        color: #000;
+        padding-left: 10px;
+        margin-left: 5px;
+        border-bottom: 2px solid #000;
+        margin-bottom: 5px;
+    }
+    
+    button{
+        width: 100px;
+        height: 45px;
+        background:rgba(118, 224, 192, 0.881); 
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+    }
     
     
 }
