@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
     scroll-padding: 70px;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 
 body{
     font-family: "Inter Medium",san-serif;
