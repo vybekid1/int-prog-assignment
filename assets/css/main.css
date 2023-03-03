@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 70px;
+}
+
+body{
+    font-family: "Inter Medium",san-serif;
+}
+
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    z-index: 9999;
+    background:linear-gradient( 60deg , rgba(100, 100, 255, 0.928),rgba(85, 68, 119, 0.928));
+
+}
+
+.logo{
+    z-index: 99999;
+}
+
+
+.navlinks a{
+
+    text-decoration: none;
+    margin: 0 5px;
+    color: #000;
+    padding: 8px ;
+    height: 30px;
+    width: max-content;
+    transition: .5s ease-in-out;
+}
+.navlinks a:hover{
+    transition: .5s ease-in-out;
+    color: white;
+    border-bottom: 2px solid antiquewhite;
+}
+
+a.active{
+    border-bottom: 2px solid antiquewhite;
+}
+.container{
+    height: calc(100vh - 50px);
+    flex-direction: column;
+    padding: 20px;
+}
+
+.home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    background:linear-gradient( 90deg , rgba(51, 51, 255, 0.673),rgba(85, 68, 119, 0.773));
+}
+.home p{
+    font-size: 20px;
+    margin-top: 60px;
+}
+.container h1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.container img{
+    width: 70%;
+    height: auto;
+    margin: 10px;
+}
+
+
+.home h1{
+    text-decoration: none;
+}
+
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient( 45deg , rgba(51, 51, 255, 0.573),rgba(85, 68, 119, 0.573));padding-bottom: 20px;
+}
+
+.products-intro-abt{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 1em;
+}
+
+
+.about .clothing-img,.laptops-img,.households-img{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background:linear-gradient( 45deg , rgba(51, 51, 255, 0.573),rgba(85, 68, 119, 0.573));
+    border-radius: 8px;
+}
+.name{
+    margin: 10px;
+}
+
+.products{
+    height: auto;
+    padding: 20px;
+    background:linear-gradient( 85deg , rgba(51, 51, 255, 0.573),rgba(85, 68, 119, 0.573));
+    padding-bottom: 50px;
+}
+
+.laptops-items{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 1em;
+    margin: 0.5rem;
+}
+.laptop-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background:linear-gradient( 45deg , rgba(51, 51, 255, 0.573),rgba(85, 68, 119, 0.573));
+}
+.laptop-item img{
+    width: 80%;
+}
+.name-price h4{
+    margin: 20px;
+}
+.name-price a{
+    text-decoration: none;
+    width: auto;
+    color: #ffffff;
+    padding: 9px;
+    border-radius: 5px;
+    margin: 10px;
+    background:linear-gradient( 45deg , rgba(0, 0, 147, 0.936),rgba(54, 40, 83, 0.941));
+    transition: .7s ease-in-out;
+}
+.name-price a:hover{
+    background:linear-gradient( 45deg ,rgba(39, 39, 41, 0.873), rgba(29, 13, 65, 0.973));
+    transition: .7s ease-in-out;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.gallery{
+    background:linear-gradient( 135deg , rgba(51, 51, 255, 0.673),rgba(85, 68, 119, 0.773));
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.gallery h4{
+    margin: 20px 0;
+}
+.gallery .images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap:1em;
+
+}
+.gallery .images img{
+    border-radius: 5px;
+    margin: auto;
+}
+.gallery .images img:nth-child(1){
+    grid-column: span 2;
+    width: 100%;
+    height: 100%;
+}
+.gallery .images img:nth-child(2){
+    grid-column: span 1;
+    width: 100%;
+    height: 100%;
+}
+.gallery .images img:nth-child(3){
+    grid-column: span 1;
+    width: 100%;
+    height: 100%;
+}
+.gallery .images img:nth-child(4){
+    grid-column: span 2;
+    width: 100%;
+    height: 100%;
+}
+
+.menu svg{
+    display: none;
+    transition: .5s  ease-in-out;
+}
+
+.menu svg.active{
+    display: block;
+    width: 100%;
+    transition: .5s  ease-in-out;
+    height: 100%;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contacts{
+    background:linear-gradient( 65deg , rgba(51, 51, 255, 0.673),rgba(85, 68, 119, 0.773));
+    height: auto;
+}
+
+.contact .call,.contacts .mail, .loc{
+    display: flex;
+    align-items: center;
+    background:linear-gradient( 135deg , rgba(193, 160, 255, 0.858),rgba(11, 57, 68, 0.881));
+    margin: 10px;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+.call .one{
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    background:linear-gradient( 135deg , rgba(193, 160, 255, 0.858),rgba(11, 57, 68, 0.881));
+    margin: 10px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.call .two{
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    background:linear-gradient( 135deg , rgba(193, 160, 255, 0.858),rgba(11, 57, 68, 0.881));
+    margin: 10px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.call .icon,.mail .icon ,.loc .icon{
+    width: 100px;
+    height: 100px;
+    background:linear-gradient( 135deg , rgba(40, 153, 194, 0.858),rgba(72, 51, 113, 0.881));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin:10px 30px;
+    
+
+}
+.icon svg{
+    width: 60%;
+    size: 40px;
+}
+
+.text {
+    font-size: 24px;
+    margin:0 30px;
+}
+
+.cal-loc-mail{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pro-page{
+    position: fixed;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    left: 50%;
+    bottom: 20px;
+}
+.pro-page .name-price{
+    transform: translate(-50%);
+    position: fixed;
+    width: 300px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding:0;
+    margin: 0;
+}
+.pro-page .name-price a{
+    width: 100%;
+    padding: 15px;
+    margin: 20px;
+}
+
+
+@media screen and (max-width:600px){
+
+    .container{
+        height: auto;
+        min-height: 100vh;
+    }
+    .container h1{
+        transform: scale(.8);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .navlinks{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left:-100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: .7s ease;
+        flex-direction: column;
+        background: linear-gradient( 60deg , rgba(100, 100, 255, 0.978),rgba(85, 68, 119, 0.978));
+    }
+
+    .navlinks.active{
+        top: 0;
+        left: 0;
+        transition: .7s ease;
+    }
+
+    .menu{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999999;
+    }
+    
+    .menu svg{
+        display: none;
+        transition: .5s  ease-in-out;
+    }
+    
+    .menu svg.active{
+        display: block;
+        width: 100%;
+        transition: .5s  ease-in-out;
+        height: 100%;
+    }
+    .products-intro-abt{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        gap: 1em;
+        margin: auto;
+    }
+    .laptops-items{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        gap: 1em;
+        margin:auto;
+        padding-bottom: 10px;
+    }
+    
+    .gallery .images{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        gap:1em;
+        margin: auto;
+    
+    }
+    .gallery .images img:nth-child(1){
+        grid-column: span 1;
+        width: 100%;
+        height: 100%;
+    }
+    .gallery .images img:nth-child(2){
+        grid-column: span 1;
+        width: 100%;
+        height: 100%;
+    }
+    .gallery .images img:nth-child(3){
+        grid-column: span 1;
+        width: 100%;
+        height: 100%;
+    }
+    .gallery .images img:nth-child(4){
+        grid-column: span 1;
+        width: 100%;
+        height: 100%;
+    }
+    .cal-loc-mail{
+        display: flex;
+        flex-direction:column;
+    }
+
+
+    .call .icon,.mail .icon ,.loc .icon{
+        width: 50px;
+        height: 50px;
+        background:linear-gradient( 135deg , rgba(40, 153, 194, 0.858),rgba(72, 51, 113, 0.881));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    
+    }
+    .icon svg{
+        width: 60%;
+    }
+    
+    .text {
+        font-size:14px;
+        padding: 20px;
+    }
+    .text a{
+        color: #000;
+    }
+    
+    .contact .call,.contacts .mail,.loc ,.call .two, .call .one{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background:linear-gradient( 135deg , rgba(193, 160, 255, 0.858),rgba(11, 57, 68, 0.881));
+        margin: 10px;
+        border-radius: 20px;
+        justify-content: center;
+        
+    
+    }
+    .pro-page{
+        position: fixed;
+        width: 100%;
+        left: 50%;
+        bottom: 20px;
+    }
+
+    .pro-page .name-price{
+        transform: translate(-50%);
+        position: fixed;
+        width: 300px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding:0;
+        margin: 0;
+    }
+    .pro-page .name-price a{
+        width: 250px;
+    }
+    
+    
+    
+}
